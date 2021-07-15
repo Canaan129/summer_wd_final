@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers GOAT</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="productSelection.html">Product Selections</a>
+        <div class="topnav-right">
+            <!-- trigger modal -->
+            <button id="cart">CART</button>
+        </div>
+    </div>
+
+    <!-- the modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Your Cart</h3>
+            <img id="shoeInCart" src="./images/AJ4-3.jpeg" alt="shoes">
+            <label for="numberOfItem">Choose a size:</label>
+            <select name="numberOfItem" id="noi">
+                <option value="">5</option>
+                <option value="">5.5</option>
+                <option value="">6</option>
+                <option value="">6.5</option>
+                <option value="">7</option>
+                <option value="">7.5</option>
+                <option value="">8</option>
+                <option value="">8.5</option>
+                <option value="">9</option>
+                <option value="">9.5</option>
+                <option value="">10</option>
+            </select>
+            <!-- <button onclick="closeCart()">close</button> -->
+        </div> 
+    </div>
+
+    <h1 id="header">Sneakers GOAT</h1>
+    <!-- yellow -->
+    <div id="container">
+        <!-- put pictures of the sneaker on -->
+        <div id="AirJordan4">
+            <div id="imageSliderAJ4">
+                <img src="./images/AJ4-3.jpeg" alt="AJ4-3">
+                <img src="./images/AJ4-1.jpeg" alt="AJ4-1">
+                <img src="./images/AJ4-2.jpeg" alt="AJ4-2">
+            </div>
+
+            <!-- <div id="buttons">
+                <button onclick="prevSlide()">Previous</button>
+                <button onclick="nextSlide()">Next</button>
+            </div> -->
+        </div>
+
+        <!-- handle info and two buttons -->
+        <div id="InfoAndButtons">
+            <div id="shoeInfo">
+                <h4 style="text-align: center;">Air Jordan 4 "White Oreo"</h4>
+                <small>
+                    <p style="text-align: center;">The Air Jordan 4 Retro White Oreo features 
+                        a white leather and mesh upper with hits of Tech Grey on its eyelets 
+                        and midsole.</p>
+                    <ul>
+                        <li>Color: White/Tech Grey-Black</li>
+                        <li>Retail Price: $190</li>
+                        <li>Release Date: 07/03/2021</li>
+                    </ul>
+                </small>
+                
+                
+            </div>
+        
+            <div id="twoButtons">
+                <button onclick="goToReview()" id="review">Go to Reviews</button>
+                <button onclick="addToCart()" id="Add">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <!-- handle comments and reviews section -->
+    <div id="comments">
+        <h2 id="reviewsAndComments">Reviews and Comments</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit quae quisquam labore dignissimos commodi, illo
+            inventore quidem officiis temporibus quas est perspiciatis dolore
+            tempora architecto ipsum maxime itaque hic odio! Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Quam, fugiat vitae! Ab
+            dolorum officiis tempora quo esse expedita beatae nobis! Fuga
+            autem, ipsa enim cupiditate iste quas in et minima.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit quae quisquam labore dignissimos commodi, illo
+            inventore quidem officiis temporibus quas est perspiciatis dolore
+            tempora architecto ipsum maxime itaque hic odio! Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Quam, fugiat vitae! Ab
+            dolorum officiis tempora quo esse expedita beatae nobis! Fuga
+            autem, ipsa enim cupiditate iste quas in et minima.
+          </p>
+          <button onclick="backToTop()">Back to Top</button>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
